@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Rent A Car Besi</title>
+
+
+</head>
+<body>
+
+    <!--Pjesa e Headerit (Logo dhe navigation bar)-->
+
+    <div class="header">
+        <h1 id="logo">Rent A Car <br><span>Besi</span></h1>
+
+        <ul class="nav-bar">
+            <li class="nav-item"><a href="index.html">Ballina</a></li>
+            <li class="nav-item"><a href="automjetet.html">Automjetet</a></li>
+            <li class="nav-item"><a href="rezervo.html">Rezervo</a></li>
+            <li class="nav-item"><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <!--Pjesa kryesore e faqes (Text dhe foto)-->
+
+    <div class="main">
+        <div class="main-text">
+            <h3 id="main-heading">Rent A Car <br>BESI</h3>
+            <p id="main-p">Merr me qira veturen tuaj te preferuar <br>me çmimet me te lira ne treg.</p>
+            <button id="btn" type="submit" onclick="login()">Rezervo</button>
+        </div>
+
+        <div class="main-image">
+            <img src="images/photo1.jpg" id="first-image"alt="" srcset="">
+        </div>
+    </div>
+
+    <hr>
+
+    <!--Pjesa e slider(Foto te veturave)-->
+
+    <div class="slideshow-container">
+
+        <div class="mySlides slider">
+        <img src="images/slide1.jpg" class="slide-image">
+        </div>
+    
+        <div class="mySlides slider">
+        <img src="images/slide2.jpg" class="slide-image">
+        </div>
+    
+        <div class="mySlides slider">
+        <img src="images/slide3.jpg" class="slide-image">
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+  
+    
+    <hr>
+    <!--Pjesa e footer-->
+
+    <div class="footer">
+
+        <h3 id="footer-heading">Rent A Car <br><span>Besi</span></h3>
+
+        <ul class="footer-navbar">
+            <li class="footer-navitem"><a href="index.html">Ballina</a></li>
+            <li class="footer-navitem"><a href="automjetet.html">Automjetet</a></li>
+            <li class="footer-navitem"><a href="rezervo.html">Rezervo</a></li>
+            <li class="footer-navitem"><a href="login.html">Login</a></li>
+        </ul>
+
+        <p id="footer-p">Reserved rights &copy; Besi</p>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
