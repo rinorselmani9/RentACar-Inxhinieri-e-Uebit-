@@ -106,32 +106,9 @@ hr{
 
 .slideshow-container{
     width: 100%;
-    position: relative;
-    margin: auto;
-}
-.mySlides{
-    display: none;
-}
-
-.slide-image{
-    width: 100%;
-}
-.dot-container{
-    margin: 0%;
-    text-align:center;
-}
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-} 
-.active, .dot:hover{
-    background-color: #717171;
+    margin: 0;
+    height: 936px;
+    background-color: #212121;
 }    
 
 /* Footer part */
@@ -182,6 +159,7 @@ hr{
 
 /* Automjetet */
 
+
 .Fotot{
     position:relative;
     display: flex;
@@ -189,6 +167,7 @@ hr{
     justify-content: space-between;
     margin:50px;
     top:20px;
+    
 }
 .Fotot .button{
     position:relative;
@@ -363,4 +342,62 @@ textarea:valid~label{
 #register_button{
     width: auto;
     display: inline-block;
+}
+
+/* Responsive design */
+
+@media screen and (max-width:890px){
+
+    .header{
+        text-align: center;
+        height: 110px;
+    }
+
+    #logo{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .nav-bar{
+        margin: 0;
+        padding-bottom: 0px;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-item{
+        padding: 5px 15px;
+    }
+    #logo>br{
+        display: none;
+    }
+      
+}
+
+
+@media screen and (max-width:1024px){
+    .main-text{
+        width: 100%;
+    }
+    .main-image{
+        display: none;
+    }
+    .footer{
+        text-align: center;
+    }
+    #footer-heading{
+        text-align: center;
+        padding:5px 0px;
+    }
+    #footer-heading>br{
+        display: none;
+    }
+    .footer-navbar{
+        display: none;
+    }
+    .slideshow-container{
+        height: auto;
+    }
+    .slideshow-container>img{
+        width: 100%;
+        height: auto;
+    }
 }
