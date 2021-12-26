@@ -182,6 +182,7 @@ hr{
     border-radius: 15%;
 }
 .Fotot2{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -369,7 +370,11 @@ textarea:valid~label{
     #logo>br{
         display: none;
     }
-      
+    /* .Fotot{
+        display: flex;
+        flex-wrap: wrap;
+    }
+       */
 }
 
 
@@ -399,5 +404,13 @@ textarea:valid~label{
     .slideshow-container>img{
         width: 100%;
         height: auto;
+    }.Fotot{
+        display: flex;
+        flex-wrap: wrap;
     }
+    .Fotot2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 }
