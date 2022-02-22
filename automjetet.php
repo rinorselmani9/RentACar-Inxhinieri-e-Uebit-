@@ -27,19 +27,19 @@
 
         <div class="foto2">
         <img src="images/photo2.jpg" class="foto2">
-        <div class="button"><a href="rezervo.html">Rezervo</a></div>
+        <div class="button"><a href="rezervo.php">Rezervo</a></div>
         <h1 id="fonts">Bmw M4</h3>
         </div>
     
         <div class="foto3">
         <img src="images/photo3.jpg" class="foto3">
-        <div class="button"><a href="rezervo.html">Rezervo</a></div>
+        <div class="button"><a href="rezervo.php">Rezervo</a></div>
         <h1 id="fonts">Audi A3</h3>
         </div>
     
         <div class="foto4">
         <img src="images/photo4.jpg" class="foto4">
-        <div class="button"><a href="rezervo.html">Rezervo</a></div>
+        <div class="button"><a href="rezervo.php">Rezervo</a></div>
         <h1 id="fonts">Golf 8</h3>
         </div>
 
@@ -49,19 +49,19 @@
 
         <div class="foto5">
         <img src="images/photo5.jpg" class="foto5">
-        <div class="button"><a href="rezervo.html">Rezervo</a></div>
+        <div class="button"><a href="rezervo.php">Rezervo</a></div>
         <h1 id="fonts2">Tesla Model S</h3>
         </div>
         
         <div class="foto6">
         <img src="images/photo6.jpg" class="foto6">
-        <div class="button"><a href="rezervo.html">Rezervo</a></div>
+        <div class="button"><a href="rezervo.php">Rezervo</a></div>
         <h1 id="fonts2">Porsche Panamera</h3>
         </div>
         
         <div class="foto7">
         <img src="images/photo7.jpg" class="foto7">
-        <div class="button"><a href="rezervo.html">Rezervo</a></div>
+        <div class="button"><a href="rezervo.php">Rezervo</a></div>
         <h1 id="fonts2">Mercedes C Class</h3>
         </div>
 

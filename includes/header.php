@@ -17,7 +17,7 @@
     
 </head>
 <body>
-<div class="header">
+    <div class="header">
         <h1 id="logo">Rent A Car <br><span>Besi</span></h1>
 
         <ul class="nav-bar">

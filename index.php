@@ -32,7 +32,7 @@
         <div class="main-text">
             <h3 id="main-heading">Rent A Car <br>BESI</h3>
             <p id="main-p">Merr me qira veturen tuaj te preferuar <br>me çmimet me te lira ne treg.</p>
-            <button id="btn" type="submit" onclick="login()">Rezervo</button>
+            <button id="btn" type="submit" onclick="window.location.href='rezervo.php'">Rezervo</button>
         </div>
 
         <div class="main-image">
