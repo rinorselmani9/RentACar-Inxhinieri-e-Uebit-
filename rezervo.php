@@ -19,15 +19,9 @@
 
 <body>
 
-    <div class="header">
-        <h1 id="logo">Rent A Car <br><span>Besi</span></h1>
-
-        <ul class="nav-bar">
-            <li class="nav-item"><a href="index.html">Ballina</a></li>
-            <li class="nav-item"><a href="automjetet.html">Automjetet</a></li>
-            <li class="nav-item"><a href="rezervo.html">Rezervo</a></li>
-            <li class="nav-item"><a href="login.html">Login</a></li>
-        </ul>
+    <?php
+        include "includes/header.php"
+    ?>
 
         <!--<img src="images/photo1.jpg">-->
 

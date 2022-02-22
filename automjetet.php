@@ -16,16 +16,9 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1 id="logo">Rent A Car <br><span>Besi</span></h1>
-
-        <ul class="nav-bar">
-            <li class="nav-item"><a href="index.html">Ballina</a></li>
-            <li class="nav-item"><a href="automjetet.html">Automjetet</a></li>
-            <li class="nav-item"><a href="rezervo.html">Rezervo</a></li>
-            <li class="nav-item"><a href="login.html">Login</a></li>
-        </ul>
-    </div>
+    <?php
+        include "includes/header.php"
+    ?>
 
     <!--Fotot-->
 
@@ -77,20 +70,9 @@
 
     <!--Footer-->
 
-    <div class="footer">
-
-        <h3 id="footer-heading">Rent A Car <br><span>Besi</span></h3>
-
-        <ul class="footer-navbar">
-            <li class="footer-navitem"><a href="index.html">Ballina</a></li>
-            <li class="footer-navitem"><a href="automjetet.html">Automjetet</a></li>
-            <li class="footer-navitem"><a href="rezervo.html">Rezervo</a></li>
-            <li class="footer-navitem"><a href="login.html">Login</a></li>
-        </ul>
-
-        <p id="footer-p">Reserved rights &copy; Besi</p>
-
-    </div>
+    <?php
+        include "includes/footer.php"
+    ?>
  
 
 
