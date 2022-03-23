@@ -17,7 +17,7 @@
 
 <body>
     <?php
-        include "includes/header.php"
+        include "includes/header.php";
     ?>
 
     <!--Fotot-->
@@ -71,7 +71,7 @@
     <!--Footer-->
 
     <?php
-        include "includes/footer.php"
+        include "includes/footer.php";
     ?>
  
 

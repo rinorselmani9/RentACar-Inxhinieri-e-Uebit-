@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+    header("location:dashboard.php");
+}else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +28,15 @@
     <!--Pjesa e Headerit (Logo dhe navigation bar)-->
 
     <?php
-        include "includes/header.php"
+        
+        include "includes/header.php";
     ?>
 
     <!--Pjesa Login forma-->
 
     <div class="container">
 
-        <form class="login-form" id="loginF" action="index.html" method="post" name="myform" onsubmit=" return validation()"> 
+        <form class="login-form" id="loginF" action="loginUser.php" method="post" name="myform" onsubmit=" return validation()"> 
 
             <h2 id="form_heading">Login</h2>
             </br>
@@ -41,13 +48,13 @@
 
             <p class="warning warning_hide" id="password_warning">Invalid password</p></br>
             <br>
-            <input type="submit" value="Login" id="login_button" >
+            <input type="submit" value="Login" name="loginBtn" id="login_button" >
             
             <input type="button" value="Register" id="register_button">
 
 
         </form>   
-        <form class="register-form form_hide" id="registerF" action="index.html" method="post" name="registerForm" onsubmit="return rValidation()"> 
+        <form class="register-form form_hide" id="registerF" action="registerUser.php" method="post" name="registerForm"> 
 
             <h2 id="form_heading">Register</h2>
             </br>
@@ -61,7 +68,7 @@
             
             <input type="email" id="email" name="email" placeholder="Email">
             <br>
-            <input type="submit" value="Register" id="register_button">
+            <input type="submit" value="Register" name="registerBtn" id="register_button">
 
         </form>   
 
@@ -71,3 +78,6 @@
 
 </body>
 </html>
+<?php
+}
+?>

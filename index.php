@@ -23,7 +23,7 @@
     <!--Pjesa e Headerit (Logo dhe navigation bar)-->
 
     <?php
-        include "includes/header.php"
+        include "includes/header.php";
     ?>
 
     <!--Pjesa kryesore e faqes (Text dhe foto)-->
@@ -53,9 +53,10 @@
     <!--Pjesa e footer-->
 
     <?php
-        include "includes/footer.php"
+        include "includes/footer.php";
     ?>
 
     <script src="app.js"></script>
 </body>
 </html>
+

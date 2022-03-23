@@ -20,7 +20,7 @@
 <body>
 
     <?php
-        include "includes/header.php"
+        include "includes/header.php";
     ?>
 
         <!--<img src="images/photo1.jpg">-->
