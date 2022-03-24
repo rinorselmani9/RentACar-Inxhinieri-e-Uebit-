@@ -1,8 +1,9 @@
 <?php
-session_start();
-if(!isset($_SESSION['username'])){
-    header("location:login.php");
-}else {
+    @session_start(); 
+    if(!isset($_SESSION['role']) || $_SESSION['role']!=='admin'){
+        header("location:login.php");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,6 +31,4 @@ if(!isset($_SESSION['username'])){
     ?>    
 </body>
 </html>
-<?php
-}
-?>
+
