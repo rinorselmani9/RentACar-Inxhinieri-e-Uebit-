@@ -14,7 +14,7 @@
             $sql = "INSERT INTO user (ID,Username,Password,Email, Role) VALUES ('$id','$user','$pass','$em','user')";
 
             if ($conn->query($sql) === TRUE) {
-                echo "New record created successfully";
+                header("location:index.php");
               } else {
                 echo "Error: " . $sql . "<br>" . $conn->error;
               }
