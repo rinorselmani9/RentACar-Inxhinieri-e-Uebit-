@@ -345,6 +345,9 @@ textarea:valid~label{
     display: inline-block;
 }
 
+
+
+
 /* Responsive design */
 
 @media screen and (max-width:890px){

@@ -14,20 +14,19 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    
-    include "includes/header.php";
+    <?php 
+        include "includes/header.php";
     ?>
 
     <div>
-        <h1>dashboard</h1>
-
+        <h1>Dashboard</h1>
         <a href="logout.php" style="color:red">Logout</a>
     </div>
     
 
     <?php
-    include "includes/footer.php";
+        include "userTable.php";
+        include "includes/footer.php";
     ?>    
 </body>
 </html>
