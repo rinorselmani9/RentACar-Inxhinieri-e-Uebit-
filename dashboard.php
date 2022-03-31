@@ -25,6 +25,7 @@
     
 
     <?php
+        include "rezervimetTable.php";
         include "userTable.php";
         include "includes/footer.php";
     ?>    

@@ -12,9 +12,4 @@
     }else{
         echo "connected succesfully";
     }
-
-    // $sql = "INSERT INTO user(ID,Username,Password,Email) VALUES ('112','agon','123123123131','agonk@gmail.com')";
-
-    
-
 ?>

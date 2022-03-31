@@ -55,7 +55,7 @@
 
 
         </form>   
-        <form class="register-form form_hide" id="registerF" action="registerUser.php" method="post" name="registerForm"> 
+        <form class="register-form form_hide" id="registerF" action="registerUser.php" method="post" name="registerForm" onsubmit= "return rValidation()"> 
 
             <h2 id="form_heading">Register</h2>
             </br>
