@@ -1,5 +1,8 @@
+<?php
+    include ('dbconfig.php');
+    $veturat = mysqli_query($conn, "SELECT * FROM veturat");
+?>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <style>
+        p{
+            font-family: 'Rubik', sans-serif;
+        }
+    </style>
 
     <title>Automjetet</title>
 </head>
@@ -19,54 +28,29 @@
     <?php
         include "includes/header.php";
     ?>
-
-    <!--Fotot-->
-
-
     <div class="Fotot">
-
+    <?php
+        if(mysqli_num_rows($veturat)>0){
+            
+            $i=0;
+            while($row = mysqli_fetch_array($veturat)){
+                $img = $row['FotoPATH'];
+    ?>
+    
         <div class="foto2">
-        <img src="images/photo2.jpg" class="foto2">
+        <img src="images/<?php echo $img;?>" class="foto2">
         <div class="button"><a href="rezervo.php">Rezervo</a></div>
-        <h1 id="fonts">Bmw M4</h3>
-        </div>
-    
-        <div class="foto3">
-        <img src="images/photo3.jpg" class="foto3">
-        <div class="button"><a href="rezervo.php">Rezervo</a></div>
-        <h1 id="fonts">Audi A3</h3>
-        </div>
-    
-        <div class="foto4">
-        <img src="images/photo4.jpg" class="foto4">
-        <div class="button"><a href="rezervo.php">Rezervo</a></div>
-        <h1 id="fonts">Golf 8</h3>
+        <h1 id="fonts"><?php echo $row['Emri'] ?></h3>
+        <p id="fonts"><?php echo $row['Qmimi'] ?>&euro;/Dita</p>
         </div>
 
+    
+    <?php
+        $i++;
+            }
+        }
+    ?>
     </div>
-
-    <div class="Fotot2">
-
-        <div class="foto5">
-        <img src="images/photo5.jpg" class="foto5">
-        <div class="button"><a href="rezervo.php">Rezervo</a></div>
-        <h1 id="fonts2">Tesla Model S</h3>
-        </div>
-        
-        <div class="foto6">
-        <img src="images/photo6.jpg" class="foto6">
-        <div class="button"><a href="rezervo.php">Rezervo</a></div>
-        <h1 id="fonts2">Porsche Panamera</h3>
-        </div>
-        
-        <div class="foto7">
-        <img src="images/photo7.jpg" class="foto7">
-        <div class="button"><a href="rezervo.php">Rezervo</a></div>
-        <h1 id="fonts2">Mercedes C Class</h3>
-        </div>
-
-    </div>
-    
 
     <!--Footer-->
 
@@ -77,6 +61,4 @@
 
 
 </body>
-
-
 </html>
