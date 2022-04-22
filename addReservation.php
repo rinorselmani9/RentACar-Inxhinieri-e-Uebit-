@@ -9,7 +9,7 @@
         $vetura=$_POST['vetura'];
         
         if(empty($_POST['emri']) || empty($_POST['telefoni']) || empty($_POST['nga']) || empty($_POST['deri']) || empty($_POST['vetura'])){
-            echo "Please fill all fields";
+            echo "<script>alert('Diqka shkoi gabim!'); window.location.href='rezervo.php';</script>";
         } else if($daten >= $nga){ 
             echo "<script>alert('Data e rezervimit duhet te filloj nga nesër!'); window.location.href='rezervo.php';</script>";
         } else {

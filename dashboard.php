@@ -33,6 +33,7 @@
     <hr>
         <a href="logout.php" style="color:black; text-decoration: underline; padding-left:10px;">Logout</a>
         <a href="shtoVetur.php" style="color:black; text-decoration: underline; padding-left:10px;">Shto Vetur</a>
+        <a href="shtoAbout.php" style="color:black; text-decoration: underline; padding-left:10px;">Shto About</a>
     </div>
     
 
@@ -41,6 +42,7 @@
         include "rezervimetTable.php";
         include "veturatTable.php";
         include "userTable.php";
+        include "aboutTable.php";
         include "includes/footer.php";
     ?>    
 </body>

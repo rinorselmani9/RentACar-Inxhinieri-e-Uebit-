@@ -7,5 +7,7 @@
     
         mysqli_query($conn, "UPDATE veturat SET Emri='$emri', Qmimi='$qmimi' WHERE ID=$id");
         header('location: dashboard.php');
+    }else{
+        echo "<script>alert('Diqka shkoi gabim'); window.location.href='veturatUpdate.php';</script>";
     }
 ?>    

@@ -1,3 +1,7 @@
+<?php
+    @session_start();
+    $isAdmin = isset($_SESSION['role']) && $_SESSION['role'] === 'admin';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +27,13 @@
             <li class="footer-navitem"><a href="index.php">Ballina</a></li>
             <li class="footer-navitem"><a href="automjetet.php">Automjetet</a></li>
             <li class="footer-navitem"><a href="rezervo.php">Rezervo</a></li>
+            <li class="nav-item"><a href="about.php">About Us</a></li>
             <li class="footer-navitem"><a href="login.php">Login</a></li>
+            <?php if($isAdmin):?>
+                 
+                 <li class="nav-item"><a href="dashboard.php">Dashboard</a></li>
+             
+             <?php endif;?>
         </ul>
 
         <p id="footer-p">Reserved rights &copy; Besi</p>

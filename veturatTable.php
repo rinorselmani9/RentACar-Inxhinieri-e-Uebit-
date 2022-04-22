@@ -65,6 +65,9 @@
                 <td>
                     <a style="color:blue;" href="veturatUpdate.php?edit=<?php echo $row['ID']; ?>">Edit</a>
                 </td>
+                <td>
+                <a style="color:blue;" href="adminCarControl.php?del=<?php echo $row['ID'];?>">Delete</a>
+            </td>
             </tr>
             <?php
                 $i++;

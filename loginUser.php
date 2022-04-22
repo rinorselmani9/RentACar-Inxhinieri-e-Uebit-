@@ -7,7 +7,7 @@
 
             
         if(empty($_POST['username']) || empty($_POST['password'])){
-            echo "username and password required";
+            echo "<script>alert('Diqka shkoi gabim!');window.location.href='login.php'</script>";
         }else{
             $username=$_POST['username'];
             $password=$_POST['password'];

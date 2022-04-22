@@ -181,25 +181,6 @@ hr{
     font-size: 16px;
     border-radius: 15%;
 }
-.Fotot2{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin:50px;
-}
-.Fotot2 .button{ 
-    position:relative;
-    z-index: 100;
-    top:25px;
-    left:280px; 
-    background-color: #6d9886; 
-    color: white;
-    padding: 15px 32px;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 15%;
-}
 a{
     text-decoration: none;
     color: white;
@@ -208,35 +189,13 @@ a{
 .foto2{
     width:450px;
     height:auto;
-}
-.foto3{
-    width:450px;
-    height:auto;
-}
-.foto4{
-    width:450px;
-    height:auto;
-}
-.foto5{
-    width:450px;
-    height:auto;
-}
-.foto6{
-    width: 410px;
-    height: auto;
-}
-.foto7{
-    width:450px;
-    height:auto;
+   height:auto;
 }
 #fonts{
     position: relative;
     bottom:40px;
 }
-#fonts2{
-    position:relative;
-    bottom:40px;
-}
+
 
 /* Rezervo */
 .rezervo{

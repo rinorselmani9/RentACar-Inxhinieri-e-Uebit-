@@ -9,7 +9,7 @@
         $em=$_POST['email'];
 
         if(empty($_POST['username']) || empty($_POST['password']) || empty($_POST['username'])){
-            echo "Please fill all fields";
+            echo "<script>alert('Diqka shkoi gabim!');window.location.href='login.php'</script>";
         }else{
             $sql = "INSERT INTO user (ID,Username,Password,Email, Role) VALUES ('$id','$user','$pass','$em','user')";
 

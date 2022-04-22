@@ -28,6 +28,7 @@
             <li class="nav-item"><a href="index.php">Ballina</a></li>
             <li class="nav-item"><a href="automjetet.php">Automjetet</a></li>
             <li class="nav-item"><a href="rezervo.php">Rezervo</a></li>
+            <li class="nav-item"><a href="about.php">About Us</a></li>
             <li class="nav-item"><a href="login.php">Login</a></li>
             <?php if($isAdmin):?>
                  
